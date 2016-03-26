@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="first">
+        <div class="heads">
+            <header>
+                <a class="fa fa-chevron-left back"></a>
+                <span>搜题</span>
+            </header>
+            <div id="search">
+                <input type="text" placeholder="请输入要搜索内容的关键字..." class="txt">
+                <span class="fa fa-search" id="sou"></span>
+            </div>
+        </div>
+        <section class="main1" id="main1">
+            <ul id="data">
+
+            </ul>
+        </section>
+
+    </div>
+    <div class="second">
+        <header>
+            <a class="fa fa-chevron-left ti-back"></a>
+            试题解析
+        </header>
+        <section>
+        </section>
+    </div>
+    <nav class="nav navH fa fa-home">
+    </nav>
+    <nav class="nav navW">
+        <ul>
+            <li>
+                <a href="#" class="fa fa-arrow-left"></a>
+                <br>
+                <a href="#" class="remain">返回</a>
+            </li>
+            <li>
+                <a href="#" class="fa fa-home"></a>
+                <br>
+                <a href="#" class="remain">首页</a>
+            </li>
+            <li>
+                <a href="#" class="fa fa-star"></a>
+                <br>
+                <a href="#" class="remain">收藏</a>
+            </li>
+            <li>
+                <a href="#" class="fa fa-pencil"></a>
+                <br>
+                <a href="#" class="remain">笔记</a>
+            </li>
+            <li>
+                <a href="#" class="fa fa-clock-o"></a>
+                <br>
+                <a href="#" class="remain">历史</a>
+            </li>
+        </ul>
+    </nav>
+    <script src="js/setfontsize.js"></script>
+    <script src="lib/jquery.js"></script>
+    <script src="lib/zepto.min.js"></script>
+    <script src="js/searchData.js"></script>
+    <script src="lib/iscroll.js"></script>
+    <script src="js/searchJson.js"></script>
+    <script>
+        ;
+        (function (w, d) {
+            var myScroll;
+
+            function loaded(e) {
+                myScroll = new iScroll('main1', {
+                    scrollbars: true,
+                    /*是否出现滚动条*/
+                    shrinkScrollbars: 'scale',
+                    /*滚动时，滚动条是否缩放*/
+                    fadeScrollbars: true,
+                    /*当滚动停止后，不否隐藏滚动条*/
+                    disableMouse: true,
+                    /*是否允许用鼠标滚动*/
+                    mouseWheel: false /*是否禁止鼠标滚动滚动*/
+
+                });
+            }
+            window.addEventListener('load', loaded, false);
+
+        })(window, document);
+    </script>
+</body>
+
+</html>

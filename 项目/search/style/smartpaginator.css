@@ -1,0 +1,112 @@
+.pager {
+    width: 100%;
+    height: 2rem;
+    /*border-radius: 8px; 	-moz-border-radius: 8px;*/
+}
+
+.pager div.short {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 14%;
+    margin-left: 1%;
+}
+
+.pager div.short input {
+    width: 50%;
+    height: 1rem;
+    margin-top: .5rem;
+    display: block;
+    margin-left: 0px;
+    float: left;
+}
+
+.pager div.short .btn {
+    width: 50%;
+    display: block;
+    color: white;
+    float: left;
+    margin-left: 0 !important;
+    background: #3b9f3b !important;
+    border: none;
+}
+
+.pager ul {
+    width: 37% !important;
+    float: left;
+    overflow: hidden;
+}
+
+.pager ul li {
+    width: 16% !important;
+    height: 1rem !important;
+    float: left;
+    margin-left: 4% !important;
+    margin-top: .5rem;
+}
+
+.pager ul li a {
+    text-decoration: none;
+    display: block;
+    float: left;
+    width: 100%;
+    font-size: .7rem;
+    height: 1rem;
+    text-align: center;
+}
+
+.pager span {
+    margin-left: 4px;
+    color: White;
+    float: left;
+}
+
+.pager .btn {
+    display: block;
+    width: 10%;
+    text-align: center;
+    float: left;
+    height: 1rem;
+    line-height: 1rem;
+    padding: 0;
+    margin-top: .5rem;
+    margin-left: 4px;
+    font-size: .6rem;
+    color: #000;
+}
+
+.short>.btn {
+    background: #a8ba5a;
+}
+
+.pager .disabled {
+    color: #000 !important;
+}
+
+
+/*red*/
+
+.red {
+    background-color: #a8ba5a;
+}
+
+.red.normal {
+    background-color: white;
+    border: solid 1px #999;
+    color: #000;
+}
+
+.red.active {
+    background-color: #ccc;
+    color: White;
+    border: solid 1px gray;
+}
+
+.pager.red .btn {
+    display: inline-block;
+    width: 10%;
+    text-align: center;
+    background-color: white;
+    color: #000;
+    border: solid 1px #999;
+}
